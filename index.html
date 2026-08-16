@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="兼城家リフォーム見積もりの条件別比較">
+  <title>兼城家｜リフォーム見積もり比較 v15</title>
+  <style>
+    :root{--ink:#21342f;--muted:#66746f;--paper:#f7f4ed;--card:#fffdf8;--line:#d8ddd7;--green:#185f4c;--green2:#dcebe4;--gold:#c3933b;--warn:#fff3d8;--shadow:0 16px 40px rgba(28,55,46,.09)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(145deg,#edf4ef 0,#f8f5ee 44%,#f2eee5 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic UI","Yu Gothic",sans-serif;line-height:1.7}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(rgba(24,95,76,.08) 1px,transparent 1px);background-size:24px 24px;mask-image:linear-gradient(to bottom,black,transparent 72%)}
+    .wrap{position:relative;width:min(1180px,calc(100% - 32px));margin:auto}.hero{padding:66px 0 32px}.eyebrow{display:inline-flex;gap:9px;align-items:center;color:var(--green);font-size:13px;font-weight:800;letter-spacing:.16em}.eyebrow:before{content:"";width:28px;height:2px;background:var(--gold)}
+    h1{margin:12px 0 10px;font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:clamp(34px,6vw,66px);font-weight:600;letter-spacing:.04em;line-height:1.18}.lead{max-width:760px;margin:0;color:var(--muted);font-size:16px}.stamp{margin-top:24px;display:inline-block;border:1px solid #b7c9c1;border-radius:999px;background:rgba(255,255,255,.7);padding:7px 14px;color:#52655e;font-size:12px}
+    .summary{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0 46px}.summary article{position:relative;overflow:hidden;background:rgba(255,253,248,.92);border:1px solid rgba(24,95,76,.14);border-radius:22px;padding:24px;box-shadow:var(--shadow)}.summary article:after{content:"";position:absolute;width:90px;height:90px;border-radius:50%;background:var(--green2);right:-38px;top:-40px}.num{display:block;color:var(--green);font-family:Georgia,serif;font-size:36px;line-height:1.2}.label{color:var(--muted);font-size:13px}
+    section{margin:52px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:18px}.section-head h2{margin:0;font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:28px}.section-head p{margin:0;color:var(--muted);font-size:13px}.table-shell{overflow:auto;border:1px solid var(--line);border-radius:20px;background:var(--card);box-shadow:var(--shadow)}table{width:100%;min-width:880px;border-collapse:collapse}th,td{padding:17px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}thead th{position:sticky;top:0;background:#edf3ef;color:#3d514a;font-size:12px;letter-spacing:.05em}tbody tr:last-child td{border-bottom:0}tbody tr:hover{background:#fbfaf5}.money{white-space:nowrap;font-weight:800;font-variant-numeric:tabular-nums}.best{color:var(--green)}.tag{display:inline-block;border-radius:999px;padding:3px 9px;background:var(--green2);color:var(--green);font-size:11px;font-weight:800}.tag.warn{background:var(--warn);color:#825f1e}.small{color:var(--muted);font-size:12px}.scenario{font-weight:800}.delta{font-size:12px;color:#7b6b49}.scope{text-align:center;font-weight:800;white-space:nowrap}.scope.yes{color:#17614d}.scope.part{color:#9a6b12}.scope.no{color:#9a4338}.scope.unknown{color:#78817d}.legend{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}.legend span{border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.65);padding:4px 10px;font-size:11px}.scope-table td:not(:first-child),.scope-table th:not(:first-child){text-align:center}.scope-table td:first-child{font-weight:700}
+    .notice{display:flex;gap:14px;margin-top:14px;border-left:4px solid var(--gold);background:var(--warn);border-radius:4px 14px 14px 4px;padding:15px 18px;font-size:13px}.notice strong{white-space:nowrap}
+    .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:var(--shadow)}.card h3{margin:0 0 4px;font-size:19px}.card .price{margin:10px 0 16px;color:var(--green);font-family:Georgia,"Yu Mincho",serif;font-size:34px;font-weight:700}.rows{display:grid;gap:0}.row{display:flex;justify-content:space-between;gap:18px;padding:10px 0;border-top:1px dashed var(--line);font-size:13px}.row span:last-child{text-align:right;font-weight:700}.checks{list-style:none;margin:14px 0 0;padding:0}.checks li{position:relative;padding:5px 0 5px 24px;font-size:13px}.checks li:before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:900}.checks li.no:before{content:"△";color:var(--gold)}
+    .configurator{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(280px,.75fr);gap:18px}.config-panel,.total-panel{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--shadow)}.unify{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}.unify button{border:1px solid #a9c1b7;border-radius:999px;background:#fff;color:var(--green);padding:9px 13px;font:inherit;font-size:12px;font-weight:800;cursor:pointer}.unify button:hover,.unify button:focus-visible{background:var(--green2);outline:2px solid transparent}.equipment-grid{display:grid;gap:14px}.equipment{display:grid;grid-template-columns:120px minmax(0,1fr);align-items:center;gap:14px;border-top:1px dashed var(--line);padding-top:14px}.equipment:first-child{border-top:0;padding-top:0}.equipment label{font-size:13px;font-weight:800}.equipment select,.base-select{width:100%;border:1px solid #b8c7c0;border-radius:12px;background:#fff;padding:11px 38px 11px 12px;color:var(--ink);font:inherit;font-size:13px}.equipment-meta{grid-column:2;color:var(--muted);font-size:11px;margin-top:-9px}.option-row{display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px dashed var(--line);margin-top:16px;padding-top:16px}.option-row label{font-size:13px;font-weight:800}.toggle{display:flex;align-items:center;gap:8px}.toggle input{width:19px;height:19px;accent-color:var(--green)}.total-panel{background:linear-gradient(155deg,#123f35,#1b6753);color:white}.total-panel .small{color:#c7ded5}.total-block{padding:15px 0;border-top:1px solid rgba(255,255,255,.2)}.total-block:first-child{border-top:0;padding-top:0}.total-title{font-size:12px;color:#c7ded5}.live-price{display:block;font-family:Georgia,"Yu Mincho",serif;font-size:clamp(29px,4vw,42px);line-height:1.25;font-weight:700}.total-detail{display:flex;justify-content:space-between;gap:12px;padding:5px 0;font-size:12px}.total-detail span:last-child{font-weight:800}.selected-list{margin:10px 0 0;padding-left:18px;color:#d7e8e1;font-size:11px}.calc-note{margin-top:14px;border-radius:12px;background:rgba(255,255,255,.1);padding:11px;font-size:11px;color:#d7e8e1}.custom-head,.custom-equipment{display:grid;grid-template-columns:110px minmax(220px,1.5fr) minmax(120px,.7fr) minmax(170px,.9fr);gap:10px;align-items:center}.custom-head{padding:0 0 9px;color:var(--muted);font-size:10px;font-weight:800}.custom-equipment{padding:12px 0;border-top:1px dashed var(--line)}.custom-equipment label{font-size:12px;font-weight:800}.custom-equipment select,.cost-input{width:100%;border:1px solid #b8c7c0;border-radius:10px;background:#fff;padding:10px;color:var(--ink);font:inherit;font-size:12px}.install-picker{display:grid;gap:5px}.install-select{font-size:11px!important;padding:8px!important}.cost-input{text-align:right;font-variant-numeric:tabular-nums}.muted-cell{color:var(--muted);font-size:11px}.row-summary{grid-column:2/-1;border-radius:8px;background:#edf5f0;padding:7px 10px;color:var(--green);font-size:11px;font-weight:800;font-variant-numeric:tabular-nums}.input-help{margin:10px 0 0;color:var(--muted);font-size:11px}.live-compare{margin-top:18px}.dynamic-row{background:#edf5f0}.dynamic-row td{border-bottom-color:#bfd1c9}.cell-price{display:block;margin-top:5px;color:var(--green);font-size:11px;font-weight:800;white-space:nowrap}.cell-detail{display:block;margin-top:3px;color:var(--muted);font-size:10px;line-height:1.55}.work-lines{display:grid;gap:2px;min-width:150px}.work-lines span{display:flex;justify-content:space-between;gap:8px;border-bottom:1px dotted #d8ddd7;font-size:10px;white-space:nowrap}.work-lines span:last-child{border-bottom:0}.work-lines b{font-weight:800}
+    .source-links{display:flex;flex-wrap:wrap;gap:10px}.source-links a{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:12px;background:var(--card);padding:10px 13px;color:var(--green);text-decoration:none;font-size:13px;font-weight:700}.source-links a:hover{border-color:var(--green);transform:translateY(-1px)}footer{padding:32px 0 54px;color:var(--muted);font-size:12px}.print{position:fixed;right:22px;bottom:22px;border:0;border-radius:999px;background:var(--green);color:white;padding:12px 18px;box-shadow:0 10px 24px rgba(24,95,76,.25);font:inherit;font-size:13px;font-weight:800;cursor:pointer}
+    @media(max-width:760px){.hero{padding-top:40px}.summary,.cards,.configurator{grid-template-columns:1fr}.summary{gap:10px}.summary article{padding:18px}.section-head{align-items:start;flex-direction:column}.notice{display:block}.notice strong{display:block;margin-bottom:4px}.equipment{grid-template-columns:1fr}.equipment-meta{grid-column:1;margin-top:-8px}.custom-head{display:none}.custom-equipment{grid-template-columns:1fr 1fr}.custom-equipment label,.custom-equipment select{grid-column:1/-1}.print{right:14px;bottom:14px}}
+    @media print{body{background:#fff}.hero{padding-top:20px}.print{display:none}.wrap{width:100%}.summary article,.card,.table-shell{box-shadow:none}section{break-inside:avoid}.source-links{display:none}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <div class="eyebrow">KANESHIRO HOME RENOVATION</div>
+      <h1>兼城家<br>見積もり比較</h1>
+      <p class="lead">全面改装と住宅設備の見積もりを、工事範囲の違いが分かるように整理しました。金額だけでなく、「何が含まれているか」を基準に比較できます。</p>
+      <span class="stamp">v15｜機器・施工項目へアイコンを追加　資料確認日：2026年8月1日</span>
+    </header>
+
+    <div class="summary">
+      <article><span class="num">¥1,463,326</span><span class="label">クックホーム原本・税込総額</span></article>
+      <article><span class="num">¥1,792,593</span><span class="label">リフォーム図書館・税込総額</span></article>
+      <article><span class="num">¥4,750,000</span><span class="label">きくはら工務店・税込総額</span></article>
+    </div>
+
+    <section>
+      <div class="section-head"><h2>🧮 クックホーム見積もりを編集</h2><p>機器・施工費・床工事を変更して他社と比較</p></div>
+      <div class="unify" aria-label="見積もりの入力例をまとめて選択">
+        <button type="button" data-preset="cook">🏠 クックホーム原本｜¥1,463,326</button>
+        <button type="button" data-preset="cook_wash">🪞 クックホーム＋洗面｜¥1,592,466</button>
+        <button type="button" data-preset="cook_floor">🪵 クックホーム＋洗面＋床｜¥2,128,665</button>
+        <button type="button" data-preset="okinawa">🧰 沖縄協同ガス 機器3点｜¥1,065,130</button>
+      </div>
+      <div class="configurator">
+        <div class="config-panel">
+          <div class="custom-head"><span>🏷️ 項目</span><span>🧰 機器・仕様</span><span>💴 機器代（税込）</span><span>🔧 施工関連費（税込）</span></div>
+          <div class="custom-equipment" data-row="kitchen">
+            <label for="kitchen-select">🍳 キッチン</label>
+            <select id="kitchen-select" data-equipment="🍳 キッチン">
+              <option data-machine="643342" data-install-choice="cook" data-label="クックホーム｜LIXIL シエラ" selected>🍳 クックホーム｜LIXIL シエラ｜機器 ¥643,342＋施工 ¥103,048＝¥746,390</option>
+              <option data-machine="648819" data-install-choice="kiku" data-label="きくはら｜タカラ エーデル">🍳 きくはら｜タカラ エーデル｜機器 ¥648,819＋施工 ¥213,730＝¥862,549</option>
+              <option data-machine="423060" data-install-choice="none" data-label="沖縄協同ガス｜タカラ エーデル">🍳 沖縄協同ガス｜タカラ エーデル｜機器のみ ¥423,060</option>
+            </select>
+            <input class="cost-input machine-cost" type="number" min="0" step="1000" value="643342" aria-label="キッチンの機器代（税込）">
+            <div class="install-picker"><select class="install-select" aria-label="キッチンの施工費を選択"><option value="cook" data-cost="103048" selected>🔧 クックホーム｜取付費 ¥103,048</option><option value="reform" data-cost="99000">🔧 リフォーム図書館｜キッチン施工 ¥99,000</option><option value="kiku" data-cost="213730">🔧 きくはら｜設置・パネル・接続等 ¥213,730</option><option value="none" data-cost="0">➖ 施工費なし｜¥0</option><option value="custom" data-cost="custom">✏️ 施工費を自分で入力</option></select><input class="cost-input install-cost" type="number" min="0" step="1000" value="103048" aria-label="キッチンの施工関連費（税込）"></div>
+            <div class="row-summary" id="kitchen-row-summary">🍳 選択中：機器 ¥643,342 ＋ 🔧 施工 ¥103,048 ＝ 小計 ¥746,390</div>
+          </div>
+          <div class="custom-equipment" data-row="bath">
+            <label for="bath-select">🛁 ユニットバス</label>
+            <select id="bath-select" data-equipment="🛁 ユニットバス">
+              <option data-machine="530388" data-install-choice="cook" data-label="クックホーム｜LIXIL リデア" selected>🛁 クックホーム｜LIXIL リデア｜機器 ¥530,388＋施工 ¥186,548＝¥716,936</option>
+              <option data-machine="900517" data-install-choice="kiku" data-label="きくはら｜タカラ グランスパ">🛁 きくはら｜タカラ グランスパ｜機器 ¥900,517＋施工 ¥93,500＝¥994,017</option>
+              <option data-machine="569910" data-install-choice="none" data-label="沖縄協同ガス｜タカラ グランスパ（機器のみ）">🛁 沖縄協同ガス｜タカラ グランスパ｜機器のみ ¥569,910</option>
+            </select>
+            <input class="cost-input machine-cost" type="number" min="0" step="1000" value="530388" aria-label="ユニットバスの機器代（税込）">
+            <div class="install-picker"><select class="install-select" aria-label="ユニットバスの施工費を選択"><option value="cook" data-cost="186548" selected>🔧 クックホーム｜取付費 ¥186,548</option><option value="kiku" data-cost="93500">🔧 きくはら｜設置・配管接続 ¥93,500</option><option value="none" data-cost="0">➖ 施工費なし｜¥0</option><option value="custom" data-cost="custom">✏️ 施工費を自分で入力</option></select><input class="cost-input install-cost" type="number" min="0" step="1000" value="186548" aria-label="ユニットバスの施工関連費（税込）"></div>
+            <div class="row-summary" id="bath-row-summary">🛁 選択中：機器 ¥530,388 ＋ 🔧 施工 ¥186,548 ＝ 小計 ¥716,936</div>
+          </div>
+          <div class="custom-equipment" data-row="vanity">
+            <label for="vanity-select">🪞 洗面化粧台</label>
+            <select id="vanity-select" data-equipment="🪞 洗面化粧台">
+              <option data-machine="0" data-install-choice="none" data-label="なし" selected>🪞 なし（クックホーム原本）｜¥0</option>
+              <option data-machine="101640" data-install-choice="kiku" data-label="きくはら｜LIXIL PV">🪞 きくはら｜LIXIL PV｜機器 ¥101,640＋施工 ¥16,500＝¥118,140</option>
+              <option data-machine="101640" data-install-choice="reform" data-label="LIXIL PV＋リフォーム図書館施工">🪞 LIXIL PV＋リフォーム図書館施工｜機器 ¥101,640＋施工 ¥27,500＝¥129,140</option>
+              <option data-machine="72160" data-install-choice="none" data-label="沖縄協同ガス｜タカラ オンディーヌ">🪞 沖縄協同ガス｜タカラ オンディーヌ｜機器のみ ¥72,160</option>
+            </select>
+            <input class="cost-input machine-cost" type="number" min="0" step="1000" value="0" aria-label="洗面化粧台の機器代（税込）">
+            <div class="install-picker"><select class="install-select" aria-label="洗面化粧台の施工費を選択"><option value="none" data-cost="0" selected>➖ 施工費なし｜¥0</option><option value="kiku" data-cost="16500">🔧 きくはら｜器具付・配管接続 ¥16,500</option><option value="reform" data-cost="27500">🔧 リフォーム図書館｜洗面台施工 ¥27,500</option><option value="custom" data-cost="custom">✏️ 施工費を自分で入力</option></select><input class="cost-input install-cost" type="number" min="0" step="1000" value="0" aria-label="洗面化粧台の施工関連費（税込）"></div>
+            <div class="row-summary" id="vanity-row-summary">🪞 選択中：機器 ¥0 ＋ 🔧 施工 ¥0 ＝ 小計 ¥0</div>
+          </div>
+          <div class="custom-equipment" data-row="floor">
+            <label for="floor-select">🪵 床工事</label>
+            <select id="floor-select">
+              <option data-total="0" selected>➖ 追加しない｜¥0</option>
+              <option data-total="536199">🪵 きくはら明細による床工事｜税込 ¥536,199</option>
+              <option data-total="0">✏️ 床工事の金額を自分で入力</option>
+            </select>
+            <span class="muted-cell">材料・撤去等を含む</span>
+            <input class="cost-input" id="floor-cost" type="number" min="0" step="1000" value="0" aria-label="床工事費（税込）">
+            <div class="row-summary" id="floor-row-summary">🪵 選択中：床工事 ¥0</div>
+          </div>
+          <p class="input-help">金額欄はすべて税込です。機器と施工費は独立しています。機器を変更しても選択中の施工費は残り、クックホーム取付 ¥103,048／¥186,548もいつでも選び直せます。</p>
+        </div>
+        <aside class="total-panel" aria-live="polite">
+          <div class="total-block"><div class="total-title">💰 クックホーム カスタム見積もり</div><output class="live-price" id="grand-total">¥1,463,326</output><div class="small">選択・入力した内容の合計</div></div>
+          <div class="total-block">
+            <div class="total-detail"><span>🧰 機器代</span><span id="machine-total">¥1,173,730</span></div>
+            <div class="total-detail"><span>🔧 機器の施工関連費</span><span id="install-total">¥289,596</span></div>
+            <div class="total-detail"><span>🪵 床工事</span><span id="floor-total">¥0</span></div>
+          </div>
+          <div class="total-block"><div class="total-title">📋 選択中の内容</div><ul class="selected-list" id="selected-list"></ul></div>
+          <div class="calc-note">施工関連費の範囲は各社で異なります。接続、パネル、給排水、電気、解体などの重複・不足は、下の範囲比較で確認してください。</div>
+        </aside>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>📊 条件別の比較</h2><p>金額はすべて税込／資料記載額ベース</p></div>
+      <div class="table-shell">
+        <table>
+          <thead><tr><th>📋 条件</th><th>🧩 構成</th><th>💰 参考総額</th><th>🍳 キッチン</th><th>🛁 浴室</th><th>🪞 洗面台</th><th>🏗️ 建築・内装工事</th><th>🔎 確認ポイント</th></tr></thead>
+          <tbody>
+            <tr><td><span class="tag">一括発注</span><br><span class="scenario">A｜きくはら工務店</span></td><td>🏠 全面リフォーム一式</td><td class="money">¥4,750,000</td><td>🍳 タカラ エーデル<span class="cell-price">機器 ¥648,819</span><span class="cell-detail">🔧 設置・パネル・接続等 ¥213,730</span></td><td>🛁 タカラ グランスパ<span class="cell-price">機器 ¥900,517</span><span class="cell-detail">🔧 設置・接続 ¥93,500</span></td><td>🪞 LIXIL PV 750<span class="cell-price">機器 ¥101,640</span><span class="cell-detail">🔧 器具付・接続 ¥16,500</span></td><td><div class="work-lines"><span>🧱 解体 <b>¥517,744</b></span><span>🪵 木工 <b>¥654,034</b></span><span>🏠 内装 <b>¥760,278</b></span><span>🚰 水道 <b>¥210,811</b></span><span>💡 電気 <b>¥185,350</b></span><span>🏗️ コンクリート・塗装・管理 <b>¥422,803</b></span></div></td><td>税込換算額。総額は調整 −¥14,449を反映</td></tr>
+            <tr><td><span class="tag warn">機器代込み</span><br><span class="scenario">B｜リフォーム図書館</span></td><td>🧰 沖縄協同ガス機器＋🔧施工・改装</td><td class="money best">¥1,792,593<br><span class="delta">Aより ¥2,957,407低い</span></td><td>🍳 タカラ エーデル<span class="cell-price">機器 ¥423,060</span><span class="cell-detail">🔧 施工は総額内</span></td><td>🛁 タカラ グランスパ<span class="cell-price">機器 ¥569,910</span><span class="cell-detail">🔧 施工は総額内</span></td><td>🪞 タカラ オンディーヌ<span class="cell-price">機器 ¥72,160</span><span class="cell-detail">🔧 施工は総額内</span></td><td><div class="work-lines"><span>🧰 機器3点 <b>¥1,065,130</b></span><span>🍳 キッチン施工 <b>¥99,000</b></span><span>🪞 洗面施工 <b>¥27,500</b></span><span>🏗️ 残りの改装・管理費 <b>¥600,963</b></span></div></td><td>機器代を含む完成総額。沖縄協同ガス分は加算しない</td></tr>
+            <tr><td><span class="tag">原本</span><br><span class="scenario">C｜クックホーム</span></td><td>🍳 キッチン＋🛁 浴室</td><td class="money">¥1,463,326</td><td>🍳 LIXIL シエラ<span class="cell-price">機器 ¥643,342</span><span class="cell-detail">🔧 取付 ¥103,048</span></td><td>🛁 LIXIL リデア<span class="cell-price">機器 ¥530,388</span><span class="cell-detail">🔧 取付 ¥186,548</span></td><td>🪞 なし<span class="cell-price">¥0</span></td><td><div class="work-lines"><span>🍳 キッチン取付 <b>¥103,048</b></span><span>🛁 浴室取付 <b>¥186,548</b></span><span>🪵 床・内装等 <b>含まない</b></span></div></td><td>クックホームのデフォルト見積もりとして常時表示</td></tr>
+            <tr class="dynamic-row"><td><span class="tag warn">自動反映</span><br><span class="scenario">D｜クックホーム カスタム</span></td><td id="condition-custom-config">🍳 キッチン＋🛁 浴室</td><td class="money best" id="condition-custom-total">¥1,463,326</td><td>🍳 <span id="condition-custom-kitchen-name">クックホーム｜LIXIL シエラ</span><span class="cell-price" id="condition-custom-kitchen-price">機器 ¥643,342</span><span class="cell-detail" id="condition-custom-kitchen-install">🔧 施工 ¥103,048</span></td><td>🛁 <span id="condition-custom-bath-name">クックホーム｜LIXIL リデア</span><span class="cell-price" id="condition-custom-bath-price">機器 ¥530,388</span><span class="cell-detail" id="condition-custom-bath-install">🔧 施工 ¥186,548</span></td><td>🪞 <span id="condition-custom-vanity-name">なし</span><span class="cell-price" id="condition-custom-vanity-price">機器 ¥0</span><span class="cell-detail" id="condition-custom-vanity-install">🔧 施工 ¥0</span></td><td><div class="work-lines"><span>🔧 機器施工 <b id="condition-custom-install-total">¥289,596</b></span><span>🪵 床工事 <b id="condition-custom-floor">¥0</b></span></div></td><td>上の編集内容・入力金額に連動</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="notice"><strong>大切な前提</strong><span>リフォーム図書館の ¥1,792,593は、沖縄協同ガスの機器 ¥1,065,130を含む完成総額として比較しています。機器代をもう一度加算すると二重計上になります。</span></div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>📄 見積もりごとの内容</h2><p>原本から読み取れた主な条件</p></div>
+      <div class="cards">
+        <article class="card">
+          <h3>株式会社きくはら工務店</h3><div class="small">住宅部分リフォーム／見積 No. mk2608018</div><div class="price">¥4,750,000</div>
+          <div class="rows"><div class="row"><span>税抜工事額</span><span>¥4,331,318</span></div><div class="row"><span>消費税</span><span>¥433,131</span></div><div class="row"><span>調整額</span><span>−¥14,449</span></div><div class="row"><span>有効期限</span><span>2026/8/1から30日</span></div></div>
+          <ul class="checks"><li>解体・木工・内装・水道・設備・電気・塗装を一式計上</li><li>設備工事 ¥1,830,388を含む</li><li class="no">アスベスト含有時の処分費は別途発生</li></ul>
+        </article>
+        <article class="card">
+          <h3>リフォーム図書館</h3><div class="small">兼城邸改装工事</div><div class="price">¥1,792,593</div>
+          <div class="rows"><div class="row"><span>建築主体工事</span><span>¥1,319,630</span></div><div class="row"><span>現場管理費</span><span>¥100,000</span></div><div class="row"><span>諸経費</span><span>¥210,000</span></div><div class="row"><span>消費税</span><span>¥162,963</span></div></div>
+          <ul class="checks"><li>沖縄協同ガスの住宅設備機器 ¥1,065,130を総額に含む</li><li>機器代を除いた施工・改装等の差額は ¥727,463</li><li>仮設・解体・木工・内装・電気・給排水・美装を計上</li><li>沖縄協同ガスの機器見積もりを別途加算しない</li></ul>
+        </article>
+        <article class="card">
+          <h3>クックホーム</h3><div class="small">キッチン＋システムバス</div><div class="price">¥1,463,326</div>
+          <div class="rows"><div class="row"><span>🍳 システムキッチン</span><span>LIXIL シエラ</span></div><div class="row"><span>💴 キッチン</span><span>¥678,537</span></div><div class="row"><span>🛁 システムバス</span><span>LIXIL リデア</span></div><div class="row"><span>💴 バス</span><span>¥651,760</span></div></div>
+          <ul class="checks"><li>税抜 ¥1,330,297／消費税 ¥133,029</li><li class="no">洗面化粧台の記載なし</li><li class="no">外部からの目視見積もり。着工後に追加の可能性</li></ul>
+        </article>
+        <article class="card">
+          <h3>沖縄協同ガス（住宅設備機器）</h3><div class="small">機器見積もり／見積 No. 1429-20260624／2026年6月24日</div><div class="price">¥1,065,130</div>
+          <div class="rows"><div class="row"><span>🍳 キッチン機器</span><span>¥384,600</span></div><div class="row"><span>🛁 浴室関連機器</span><span>¥518,100</span></div><div class="row"><span>🪞 洗面化粧台機器</span><span>¥65,600</span></div><div class="row"><span>🧰 機器小計</span><span>¥968,300</span></div></div>
+          <ul class="checks"><li>全額を住宅設備機器の見積もりとして扱う</li><li>この ¥1,065,130はリフォーム図書館の総額に内包</li><li>タカラスタンダードで3点を統一</li><li class="no">比較時にリフォーム図書館へ重ねて加算しない</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>🧭 見積もり範囲の比較</h2><p>各見積書に明記された内容で判定</p></div>
+      <div class="table-shell">
+        <table class="scope-table">
+          <thead><tr><th>工事・設備</th><th>きくはら工務店</th><th>リフォーム図書館</th><th>クックホーム</th><th>沖縄協同ガス<br>機器見積もり</th></tr></thead>
+          <tbody>
+            <tr><td>仮設・養生</td><td class="scope part">△ 一部</td><td class="scope yes">● 含む</td><td class="scope unknown">— 記載なし</td><td class="scope no">× 別途</td></tr>
+            <tr><td>既存設備・内装の解体</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope unknown">— 記載なし</td><td class="scope no">× 別途</td></tr>
+            <tr><td>廃材の搬出・処分</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope unknown">— 記載なし</td><td class="scope no">× 別途</td></tr>
+            <tr><td>🪵 木工・下地・床</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope unknown">— 記載なし</td><td class="scope no">× 別途</td></tr>
+            <tr><td>壁・天井・クロス等の内装</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope unknown">— 記載なし</td><td class="scope no">× 別途</td></tr>
+            <tr><td>🚰 給排水・給湯配管工事</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope unknown">— 要確認</td><td class="scope no">× 別途</td></tr>
+            <tr><td>💡 電気・換気工事</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope unknown">— 要確認</td><td class="scope no">× 別途</td></tr>
+            <tr><td>🍳 システムキッチン本体</td><td class="scope yes">● ¥648,819</td><td class="scope yes">● ¥423,060</td><td class="scope yes">● ¥643,342</td><td class="scope yes">● ¥423,060</td></tr>
+            <tr><td>🔧 キッチン取付・接続</td><td class="scope yes">● ¥213,730</td><td class="scope yes">● ¥99,000</td><td class="scope part">△ ¥103,048</td><td class="scope no">× 機器のみ</td></tr>
+            <tr><td>🛁 ユニットバス本体</td><td class="scope yes">● ¥900,517</td><td class="scope yes">● ¥569,910</td><td class="scope yes">● ¥530,388</td><td class="scope yes">● ¥569,910</td></tr>
+            <tr><td>🔧 ユニットバス組付・接続</td><td class="scope yes">● ¥93,500</td><td class="scope yes">● 総額内</td><td class="scope part">△ ¥186,548</td><td class="scope no">× 機器のみ</td></tr>
+            <tr><td>🪞 洗面化粧台本体</td><td class="scope yes">● ¥101,640</td><td class="scope yes">● ¥72,160</td><td class="scope unknown">— ¥0</td><td class="scope yes">● ¥72,160</td></tr>
+            <tr><td>🔧 洗面化粧台取付・接続</td><td class="scope yes">● ¥16,500</td><td class="scope yes">● ¥27,500</td><td class="scope unknown">— ¥0</td><td class="scope no">× 機器のみ</td></tr>
+            <tr><td>塗装</td><td class="scope yes">● 含む</td><td class="scope part">△ 一部</td><td class="scope unknown">— 記載なし</td><td class="scope no">× 別途</td></tr>
+            <tr><td>完成後の清掃・美装</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope unknown">— 記載なし</td><td class="scope unknown">— 記載なし</td></tr>
+            <tr><td>現場管理・諸経費</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope unknown">— 記載なし</td><td class="scope unknown">— 記載なし</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="legend"><span class="scope yes">● 含む</span><span class="scope part">△ 一部／条件付き</span><span class="scope no">× 別途／施主支給</span><span class="scope unknown">— 記載なし／要確認</span></div>
+      <div class="notice"><strong>読み方</strong><span>リフォーム図書館の総額 ¥1,792,593には、沖縄協同ガスの住宅設備機器 ¥1,065,130がすでに含まれています。2つの金額は合算しません。沖縄協同ガスの資料は、リフォーム図書館総額に含まれる機器内容の確認用です。</span></div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>✅ 契約前にそろえる条件</h2><p>同条件で再見積もりを依頼すると比較が正確になります</p></div>
+      <div class="table-shell">
+        <table>
+          <thead><tr><th>確認項目</th><th>質問する内容</th><th>理由</th></tr></thead>
+          <tbody>
+            <tr><td class="scenario">設備の仕様</td><td>型番、サイズ、扉・浴槽・水栓・換気設備まで同じ条件か</td><td>シリーズ名が同じでもオプションで金額が変わる</td></tr>
+            <tr><td class="scenario">施工の境界</td><td>搬入、組付け、配管・電気接続、既存品撤去を誰が行うか</td><td>組み合わせ案の抜け・二重計上を防ぐ</td></tr>
+            <tr><td class="scenario">追加費用</td><td>アスベスト、下地腐食、配管延長、廃材処分の上限</td><td>着工後の予算超過を抑える</td></tr>
+            <tr><td class="scenario">工期と生活影響</td><td>着工日、完了日、水・風呂・キッチンが使えない期間</td><td>仮住まいや食事の費用も判断材料になる</td></tr>
+            <tr><td class="scenario">保証</td><td>工事保証と設備メーカー保証の窓口・期間</td><td>複数社発注時の責任分界を明確にする</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>※ 本ページは見積書の比較用まとめです。契約金額・工事範囲は、必ず各社の最新見積書と契約書で確認してください。</footer>
+  </main>
+  <button class="print" type="button" onclick="window.print()" aria-label="この比較表を印刷する">印刷・PDF保存</button>
+  <script>
+    (() => {
+      const kitchen = document.getElementById('kitchen-select');
+      const bath = document.getElementById('bath-select');
+      const vanity = document.getElementById('vanity-select');
+      const selects = [kitchen, bath, vanity];
+      const floorSelect = document.getElementById('floor-select');
+      const floorCost = document.getElementById('floor-cost');
+      const yen = value => `¥${Math.round(Number(value) || 0).toLocaleString('ja-JP')}`;
+      const numberValue = input => Math.max(0, Number(input.value) || 0);
+
+      function applyInstallSelection(installSelect) {
+        const cost = installSelect.selectedOptions[0].dataset.cost;
+        if (cost !== 'custom') installSelect.closest('.install-picker').querySelector('.install-cost').value = cost;
+      }
+
+      function applySelection(select, syncInstall = false) {
+        const row = select.closest('.custom-equipment');
+        const option = select.selectedOptions[0];
+        row.querySelector('.machine-cost').value = option.dataset.machine;
+        if (syncInstall) {
+          const installSelect = row.querySelector('.install-select');
+          installSelect.value = option.dataset.installChoice;
+          applyInstallSelection(installSelect);
+        }
+      }
+
+      function update() {
+        const machineTotal = [...document.querySelectorAll('.machine-cost')].reduce((sum, input) => sum + numberValue(input), 0);
+        const installTotal = [...document.querySelectorAll('.install-cost')].reduce((sum, input) => sum + numberValue(input), 0);
+        const floorTotal = numberValue(floorCost);
+        const grand = machineTotal + installTotal + floorTotal;
+
+        document.getElementById('machine-total').textContent = yen(machineTotal);
+        document.getElementById('install-total').textContent = yen(installTotal);
+        document.getElementById('floor-total').textContent = yen(floorTotal);
+        document.getElementById('grand-total').textContent = yen(grand);
+
+        const list = document.getElementById('selected-list');
+        list.innerHTML = '';
+        const descriptions = [];
+        selects.forEach(select => {
+          const option = select.selectedOptions[0];
+          const row = select.closest('.custom-equipment');
+          const machine = numberValue(row.querySelector('.machine-cost'));
+          const install = numberValue(row.querySelector('.install-cost'));
+          const item = document.createElement('li');
+          item.textContent = `${select.dataset.equipment}：${option.dataset.label}｜機器 ${yen(machine)}＋施工 ${yen(install)}＝${yen(machine + install)}`;
+          list.appendChild(item);
+          document.getElementById(`${select.id.replace('-select','')}-row-summary`).textContent = `${select.dataset.equipment}｜選択中：機器 ${yen(machine)} ＋ 🔧 施工 ${yen(install)} ＝ 小計 ${yen(machine + install)}`;
+          if (option.dataset.label !== 'なし') descriptions.push(select.dataset.equipment);
+        });
+        if (floorTotal) descriptions.push('床工事');
+        document.getElementById('floor-row-summary').textContent = `🪵 選択中：床工事 ${yen(floorTotal)}`;
+        const description = descriptions.join('＋') || '機器・工事なし';
+        document.getElementById('condition-custom-config').textContent = description;
+        document.getElementById('condition-custom-total').textContent = yen(grand);
+        [['kitchen', kitchen], ['bath', bath], ['vanity', vanity]].forEach(([prefix, select]) => {
+          const row = select.closest('.custom-equipment');
+          const machine = numberValue(row.querySelector('.machine-cost'));
+          const install = numberValue(row.querySelector('.install-cost'));
+          document.getElementById(`condition-custom-${prefix}-name`).textContent = select.selectedOptions[0].dataset.label;
+          document.getElementById(`condition-custom-${prefix}-price`).textContent = `機器 ${yen(machine)}`;
+          document.getElementById(`condition-custom-${prefix}-install`).textContent = `🔧 施工 ${yen(install)}`;
+        });
+        document.getElementById('condition-custom-install-total').textContent = yen(installTotal);
+        document.getElementById('condition-custom-floor').textContent = yen(floorTotal);
+
+      }
+
+      const presets = {
+        cook: {indexes:[0, 0, 0], floor:0},
+        cook_wash: {indexes:[0, 0, 2], floor:0},
+        cook_floor: {indexes:[0, 0, 2], floor:1},
+        okinawa: {indexes:[2, 2, 3], floor:0}
+      };
+      document.querySelectorAll('[data-preset]').forEach(button => {
+        button.addEventListener('click', () => {
+          const preset = presets[button.dataset.preset];
+          preset.indexes.forEach((index, i) => {
+            selects[i].selectedIndex = index;
+            applySelection(selects[i], true);
+          });
+          floorSelect.selectedIndex = preset.floor;
+          floorCost.value = floorSelect.selectedOptions[0].dataset.total;
+          update();
+        });
+      });
+      selects.forEach(select => select.addEventListener('change', () => { applySelection(select, false); update(); }));
+      document.querySelectorAll('.install-select').forEach(select => select.addEventListener('change', () => { applyInstallSelection(select); update(); }));
+      floorSelect.addEventListener('change', () => { floorCost.value = floorSelect.selectedOptions[0].dataset.total; update(); });
+      document.querySelectorAll('.cost-input').forEach(input => input.addEventListener('input', () => {
+        if (input.classList.contains('install-cost')) input.closest('.install-picker').querySelector('.install-select').value = 'custom';
+        update();
+      }));
+      update();
+    })();
+  </script>
+</body>
+</html>

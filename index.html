@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="兼城家リフォーム見積もりの条件別比較">
-  <title>兼城家｜リフォーム見積もり比較 v15</title>
+  <title>兼城家｜リフォーム見積もり比較 v16</title>
   <style>
     :root{--ink:#21342f;--muted:#66746f;--paper:#f7f4ed;--card:#fffdf8;--line:#d8ddd7;--green:#185f4c;--green2:#dcebe4;--gold:#c3933b;--warn:#fff3d8;--shadow:0 16px 40px rgba(28,55,46,.09)}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(145deg,#edf4ef 0,#f8f5ee 44%,#f2eee5 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic UI","Yu Gothic",sans-serif;line-height:1.7}
@@ -26,17 +26,16 @@
 <body>
   <main class="wrap">
     <div class="summary">
-      <article><span class="num">¥1,463,326</span><span class="label">クックホーム原本・税込総額</span></article>
+      <article><span class="num">¥4,398,152</span><span class="label">クックホーム・住宅改修詳細見積（税込）</span></article>
       <article><span class="num">¥1,792,593</span><span class="label">リフォーム図書館・施工改装のみ税込</span></article>
       <article><span class="num">¥4,750,000</span><span class="label">きくはら工務店・税込総額</span></article>
     </div>
 
     <section>
-      <div class="section-head"><h2>🧮 クックホーム見積もりを編集</h2><p>機器・施工費・床工事を変更して他社と比較</p></div>
+      <div class="section-head"><h2>🧮 クックホーム見積もりを編集</h2><p>詳細見積・設備2点見積・他社機器を切り替えて比較</p></div>
       <div class="unify" aria-label="見積もりの入力例をまとめて選択">
-        <button type="button" data-preset="cook">🏠 クックホーム原本｜¥1,463,326</button>
-        <button type="button" data-preset="cook_wash">🪞 クックホーム＋洗面｜¥1,592,466</button>
-        <button type="button" data-preset="cook_floor">🪵 クックホーム＋洗面＋床｜¥2,128,665</button>
+        <button type="button" data-preset="cook_detail">🏠 クックホーム住宅改修一式｜¥4,398,152</button>
+        <button type="button" data-preset="cook_equipment">🍳 クックホーム設備2点｜¥1,463,326</button>
         <button type="button" data-preset="okinawa">🧰 沖縄協同ガス 機器3点｜¥1,065,130</button>
       </div>
       <div class="configurator">
@@ -45,56 +44,60 @@
           <div class="custom-equipment" data-row="kitchen">
             <label for="kitchen-select">🍳 キッチン</label>
             <select id="kitchen-select" data-equipment="🍳 キッチン">
-              <option data-machine="643342" data-install-choice="cook" data-label="クックホーム｜LIXIL シエラ" selected>🍳 クックホーム｜LIXIL シエラ｜機器 ¥643,342＋施工 ¥103,048＝¥746,390</option>
+              <option data-machine="504350" data-install-choice="cook_detail" data-label="クックホーム詳細｜クリナップ ラクエラ" selected>🍳 クックホーム詳細｜クリナップ ラクエラ｜機器 ¥504,350＋取替関連 ¥497,200＝¥1,001,550</option>
+              <option data-machine="530388" data-install-choice="cook_equipment" data-label="クックホーム設備見積｜LIXIL シエラ">🍳 クックホーム設備見積｜LIXIL シエラ｜機器 ¥530,388＋取付 ¥186,548＝¥716,936</option>
               <option data-machine="648819" data-install-choice="kiku" data-label="きくはら｜タカラ エーデル">🍳 きくはら｜タカラ エーデル｜機器 ¥648,819＋施工 ¥213,730＝¥862,549</option>
               <option data-machine="423060" data-install-choice="none" data-label="沖縄協同ガス｜タカラ エーデル">🍳 沖縄協同ガス｜タカラ エーデル｜機器のみ ¥423,060</option>
             </select>
-            <input class="cost-input machine-cost" type="number" min="0" step="1000" value="643342" aria-label="キッチンの機器代（税込）">
-            <div class="install-picker"><select class="install-select" aria-label="キッチンの施工費を選択"><option value="cook" data-cost="103048" selected>🔧 クックホーム｜取付費 ¥103,048</option><option value="reform" data-cost="99000">🔧 リフォーム図書館｜キッチン施工 ¥99,000</option><option value="kiku" data-cost="213730">🔧 きくはら｜設置・パネル・接続等 ¥213,730</option><option value="none" data-cost="0">➖ 施工費なし｜¥0</option><option value="custom" data-cost="custom">✏️ 施工費を自分で入力</option></select><input class="cost-input install-cost" type="number" min="0" step="1000" value="103048" aria-label="キッチンの施工関連費（税込）"></div>
-            <div class="row-summary" id="kitchen-row-summary">🍳 選択中：機器 ¥643,342 ＋ 🔧 施工 ¥103,048 ＝ 小計 ¥746,390</div>
+            <input class="cost-input machine-cost" type="number" min="0" step="1000" value="504350" aria-label="キッチンの機器代（税込）">
+            <div class="install-picker"><select class="install-select" aria-label="キッチンの施工費を選択"><option value="cook_detail" data-cost="497200" selected>🔧 クックホーム詳細｜撤去・配管・電気・取付等 ¥497,200</option><option value="cook_equipment" data-cost="186548">🔧 クックホーム設備見積｜取付費 ¥186,548</option><option value="reform" data-cost="99000">🔧 リフォーム図書館｜キッチン施工 ¥99,000</option><option value="kiku" data-cost="213730">🔧 きくはら｜設置・パネル・接続等 ¥213,730</option><option value="none" data-cost="0">➖ 施工費なし｜¥0</option><option value="custom" data-cost="custom">✏️ 施工費を自分で入力</option></select><input class="cost-input install-cost" type="number" min="0" step="1000" value="497200" aria-label="キッチンの施工関連費（税込）"></div>
+            <div class="row-summary" id="kitchen-row-summary">🍳 選択中：機器 ¥504,350 ＋ 🔧 施工 ¥497,200 ＝ 小計 ¥1,001,550</div>
           </div>
           <div class="custom-equipment" data-row="bath">
             <label for="bath-select">🛁 ユニットバス</label>
             <select id="bath-select" data-equipment="🛁 ユニットバス">
-              <option data-machine="530388" data-install-choice="cook" data-label="クックホーム｜LIXIL リデア" selected>🛁 クックホーム｜LIXIL リデア｜機器 ¥530,388＋施工 ¥186,548＝¥716,936</option>
+              <option data-machine="711150" data-install-choice="cook_detail" data-label="クックホーム詳細｜クリナップ ラクヴィア" selected>🛁 クックホーム詳細｜クリナップ ラクヴィア｜機器 ¥711,150＋解体・補修・取付等 ¥531,124＝¥1,242,274</option>
+              <option data-machine="643342" data-install-choice="cook_equipment" data-label="クックホーム設備見積｜LIXIL リデア">🛁 クックホーム設備見積｜LIXIL リデア｜機器 ¥643,342＋取付 ¥103,048＝¥746,390</option>
               <option data-machine="900517" data-install-choice="kiku" data-label="きくはら｜タカラ グランスパ">🛁 きくはら｜タカラ グランスパ｜機器 ¥900,517＋施工 ¥93,500＝¥994,017</option>
               <option data-machine="471570" data-install-choice="gas" data-label="沖縄協同ガス｜タカラ グランスパ">🛁 沖縄協同ガス｜タカラ グランスパ｜機器 ¥471,570＋メーカー組付 ¥98,340＝¥569,910</option>
             </select>
-            <input class="cost-input machine-cost" type="number" min="0" step="1000" value="530388" aria-label="ユニットバスの機器代（税込）">
-            <div class="install-picker"><select class="install-select" aria-label="ユニットバスの施工費を選択"><option value="cook" data-cost="186548" selected>🔧 クックホーム｜取付費 ¥186,548</option><option value="kiku" data-cost="93500">🔧 きくはら｜設置・配管接続 ¥93,500</option><option value="gas" data-cost="98340">🔧 沖縄協同ガス｜メーカー組付 ¥98,340</option><option value="none" data-cost="0">➖ 施工費なし｜¥0</option><option value="custom" data-cost="custom">✏️ 施工費を自分で入力</option></select><input class="cost-input install-cost" type="number" min="0" step="1000" value="186548" aria-label="ユニットバスの施工関連費（税込）"></div>
-            <div class="row-summary" id="bath-row-summary">🛁 選択中：機器 ¥530,388 ＋ 🔧 施工 ¥186,548 ＝ 小計 ¥716,936</div>
+            <input class="cost-input machine-cost" type="number" min="0" step="1000" value="711150" aria-label="ユニットバスの機器代（税込）">
+            <div class="install-picker"><select class="install-select" aria-label="ユニットバスの施工費を選択"><option value="cook_detail" data-cost="531124" selected>🔧 クックホーム詳細｜解体・廃棄・土間・補壁・取付・配管 ¥531,124</option><option value="cook_equipment" data-cost="103048">🔧 クックホーム設備見積｜取付費 ¥103,048</option><option value="kiku" data-cost="93500">🔧 きくはら｜設置・配管接続 ¥93,500</option><option value="gas" data-cost="98340">🔧 沖縄協同ガス｜メーカー組付 ¥98,340</option><option value="none" data-cost="0">➖ 施工費なし｜¥0</option><option value="custom" data-cost="custom">✏️ 施工費を自分で入力</option></select><input class="cost-input install-cost" type="number" min="0" step="1000" value="531124" aria-label="ユニットバスの施工関連費（税込）"></div>
+            <div class="row-summary" id="bath-row-summary">🛁 選択中：機器 ¥711,150 ＋ 🔧 施工 ¥531,124 ＝ 小計 ¥1,242,274</div>
           </div>
           <div class="custom-equipment" data-row="vanity">
             <label for="vanity-select">🪞 洗面化粧台</label>
             <select id="vanity-select" data-equipment="🪞 洗面化粧台">
-              <option data-machine="0" data-install-choice="none" data-label="なし" selected>🪞 なし（クックホーム原本）｜¥0</option>
+              <option data-machine="100683" data-install-choice="cook_detail" data-label="クックホーム詳細｜洗面化粧台＋脱衣室改修" selected>🪞 クックホーム詳細｜洗面化粧台 ¥100,683＋脱衣室・配管・施工等 ¥550,363＝¥651,046</option>
+              <option data-machine="0" data-install-choice="none" data-label="なし">🪞 なし（クックホーム設備2点見積）｜¥0</option>
               <option data-machine="101640" data-install-choice="kiku" data-label="きくはら｜LIXIL PV">🪞 きくはら｜LIXIL PV｜機器 ¥101,640＋施工 ¥16,500＝¥118,140</option>
               <option data-machine="101640" data-install-choice="reform" data-label="LIXIL PV＋リフォーム図書館施工">🪞 LIXIL PV＋リフォーム図書館施工｜機器 ¥101,640＋施工 ¥27,500＝¥129,140</option>
               <option data-machine="72160" data-install-choice="none" data-label="沖縄協同ガス｜タカラ オンディーヌ">🪞 沖縄協同ガス｜タカラ オンディーヌ｜機器のみ ¥72,160</option>
             </select>
-            <input class="cost-input machine-cost" type="number" min="0" step="1000" value="0" aria-label="洗面化粧台の機器代（税込）">
-            <div class="install-picker"><select class="install-select" aria-label="洗面化粧台の施工費を選択"><option value="none" data-cost="0" selected>➖ 施工費なし｜¥0</option><option value="kiku" data-cost="16500">🔧 きくはら｜器具付・配管接続 ¥16,500</option><option value="reform" data-cost="27500">🔧 リフォーム図書館｜洗面台施工 ¥27,500</option><option value="custom" data-cost="custom">✏️ 施工費を自分で入力</option></select><input class="cost-input install-cost" type="number" min="0" step="1000" value="0" aria-label="洗面化粧台の施工関連費（税込）"></div>
-            <div class="row-summary" id="vanity-row-summary">🪞 選択中：機器 ¥0 ＋ 🔧 施工 ¥0 ＝ 小計 ¥0</div>
+            <input class="cost-input machine-cost" type="number" min="0" step="1000" value="100683" aria-label="洗面化粧台の機器代（税込）">
+            <div class="install-picker"><select class="install-select" aria-label="洗面化粧台の施工費を選択"><option value="cook_detail" data-cost="550363" selected>🔧 クックホーム詳細｜脱衣室木工・内装・床・配管・施工等 ¥550,363</option><option value="none" data-cost="0">➖ 施工費なし｜¥0</option><option value="kiku" data-cost="16500">🔧 きくはら｜器具付・配管接続 ¥16,500</option><option value="reform" data-cost="27500">🔧 リフォーム図書館｜洗面台施工 ¥27,500</option><option value="custom" data-cost="custom">✏️ 施工費を自分で入力</option></select><input class="cost-input install-cost" type="number" min="0" step="1000" value="550363" aria-label="洗面化粧台の施工関連費（税込）"></div>
+            <div class="row-summary" id="vanity-row-summary">🪞 選択中：機器 ¥100,683 ＋ 🔧 施工 ¥550,363 ＝ 小計 ¥651,046</div>
           </div>
           <div class="custom-equipment" data-row="floor">
-            <label for="floor-select">🪵 床工事</label>
+            <label for="floor-select">🏠 その他工事</label>
             <select id="floor-select">
-              <option data-total="0" selected>➖ 追加しない｜¥0</option>
+              <option data-total="1503282" selected>🏠 クックホーム｜洋室改修＋諸経費｜税込 ¥1,503,282</option>
+              <option data-total="0">➖ 追加しない｜¥0</option>
               <option data-total="536199">🪵 きくはら明細による床工事｜税込 ¥536,199</option>
-              <option data-total="0">✏️ 床工事の金額を自分で入力</option>
+              <option data-total="0">✏️ その他工事の金額を自分で入力</option>
             </select>
-            <span class="muted-cell">材料・撤去等を含む</span>
-            <input class="cost-input" id="floor-cost" type="number" min="0" step="1000" value="0" aria-label="床工事費（税込）">
-            <div class="row-summary" id="floor-row-summary">🪵 選択中：床工事 ¥0</div>
+            <span class="muted-cell">洋室改修・床工事・諸経費など</span>
+            <input class="cost-input" id="floor-cost" type="number" min="0" step="1000" value="1503282" aria-label="その他工事費（税込）">
+            <div class="row-summary" id="floor-row-summary">🏠 選択中：その他工事 ¥1,503,282</div>
           </div>
-          <p class="input-help">金額欄はすべて税込です。機器と施工費は独立しています。機器を変更しても選択中の施工費は残り、クックホーム取付 ¥103,048／¥186,548もいつでも選び直せます。</p>
+          <p class="input-help">金額欄はすべて税込です。詳細見積の施工関連費には撤去・処分・下地・配管なども含みます。機器は未確定のため、型番確定後に同じ条件で再見積もりが必要です。</p>
         </div>
         <aside class="total-panel" aria-live="polite">
-          <div class="total-block"><div class="total-title">💰 クックホーム カスタム見積もり</div><output class="live-price" id="grand-total">¥1,463,326</output><div class="small">選択・入力した内容の合計</div></div>
+          <div class="total-block"><div class="total-title">💰 クックホーム カスタム見積もり</div><output class="live-price" id="grand-total">¥4,398,152</output><div class="small">選択・入力した内容の合計</div></div>
           <div class="total-block">
-            <div class="total-detail"><span>🧰 機器代</span><span id="machine-total">¥1,173,730</span></div>
-            <div class="total-detail"><span>🔧 機器の施工関連費</span><span id="install-total">¥289,596</span></div>
-            <div class="total-detail"><span>🪵 床工事</span><span id="floor-total">¥0</span></div>
+            <div class="total-detail"><span>🧰 機器代</span><span id="machine-total">¥1,316,183</span></div>
+            <div class="total-detail"><span>🔧 機器・各室の施工関連費</span><span id="install-total">¥1,578,687</span></div>
+            <div class="total-detail"><span>🏠 その他工事</span><span id="floor-total">¥1,503,282</span></div>
           </div>
           <div class="total-block"><div class="total-title">📋 選択中の内容</div><ul class="selected-list" id="selected-list"></ul></div>
           <div class="calc-note">施工関連費の範囲は各社で異なります。接続、パネル、給排水、電気、解体などの重複・不足は、下の範囲比較で確認してください。</div>
@@ -110,8 +113,9 @@
           <tbody>
             <tr><td><span class="tag">一括発注</span><br><span class="scenario">A｜きくはら工務店</span></td><td>🏠 全面リフォーム一式</td><td class="money">¥4,750,000</td><td>🍳 タカラ エーデル<span class="cell-price">機器 ¥648,819</span><span class="cell-detail">🔧 設置・パネル・接続等 ¥213,730</span></td><td>🛁 タカラ グランスパ<span class="cell-price">機器 ¥900,517</span><span class="cell-detail">🔧 設置・接続 ¥93,500</span></td><td>🪞 LIXIL PV 750<span class="cell-price">機器 ¥101,640</span><span class="cell-detail">🔧 器具付・接続 ¥16,500</span></td><td><div class="work-lines"><span>🧱 解体 <b>¥517,744</b></span><span>🪵 木工 <b>¥654,034</b></span><span>🏠 内装 <b>¥760,278</b></span><span>🚰 水道 <b>¥210,811</b></span><span>💡 電気 <b>¥185,350</b></span><span>🏗️ コンクリート・塗装・管理 <b>¥422,803</b></span></div></td><td>税込換算額。総額は調整 −¥14,449を反映</td></tr>
             <tr><td><span class="tag warn">2社合算</span><br><span class="scenario">B｜リフォーム図書館＋沖縄協同ガス</span></td><td>🔧 施工・改装＋🧰 住宅設備3点</td><td class="money best">¥2,857,723<br><span class="delta">Aより ¥1,892,277低い</span></td><td>🍳 タカラ エーデル<span class="cell-price">機器 ¥423,060</span><span class="cell-detail">🔧 リフォーム図書館施工 ¥99,000</span></td><td>🛁 タカラ グランスパ<span class="cell-price">機器 ¥471,570</span><span class="cell-detail">🔧 メーカー組付 ¥98,340</span></td><td>🪞 タカラ オンディーヌ<span class="cell-price">機器 ¥72,160</span><span class="cell-detail">🔧 リフォーム図書館施工 ¥27,500</span></td><td><div class="work-lines"><span>🔨 リフォーム図書館 <b>¥1,792,593</b></span><span>🧰 沖縄協同ガス <b>¥1,065,130</b></span></div></td><td>2社の税込見積を合算。機器本体は施工見積に含まれない</td></tr>
-            <tr><td><span class="tag">原本</span><br><span class="scenario">C｜クックホーム</span></td><td>🍳 キッチン＋🛁 浴室</td><td class="money">¥1,463,326</td><td>🍳 LIXIL シエラ<span class="cell-price">機器 ¥643,342</span><span class="cell-detail">🔧 取付 ¥103,048</span></td><td>🛁 LIXIL リデア<span class="cell-price">機器 ¥530,388</span><span class="cell-detail">🔧 取付 ¥186,548</span></td><td>🪞 なし<span class="cell-price">¥0</span></td><td><div class="work-lines"><span>🍳 キッチン取付 <b>¥103,048</b></span><span>🛁 浴室取付 <b>¥186,548</b></span><span>🪵 床・内装等 <b>含まない</b></span></div></td><td>クックホームのデフォルト見積もりとして常時表示</td></tr>
-            <tr class="dynamic-row"><td><span class="tag warn">自動反映</span><br><span class="scenario">D｜クックホーム カスタム</span></td><td id="condition-custom-config">🍳 キッチン＋🛁 浴室</td><td class="money best" id="condition-custom-total">¥1,463,326</td><td>🍳 <span id="condition-custom-kitchen-name">クックホーム｜LIXIL シエラ</span><span class="cell-price" id="condition-custom-kitchen-price">機器 ¥643,342</span><span class="cell-detail" id="condition-custom-kitchen-install">🔧 施工 ¥103,048</span></td><td>🛁 <span id="condition-custom-bath-name">クックホーム｜LIXIL リデア</span><span class="cell-price" id="condition-custom-bath-price">機器 ¥530,388</span><span class="cell-detail" id="condition-custom-bath-install">🔧 施工 ¥186,548</span></td><td>🪞 <span id="condition-custom-vanity-name">なし</span><span class="cell-price" id="condition-custom-vanity-price">機器 ¥0</span><span class="cell-detail" id="condition-custom-vanity-install">🔧 施工 ¥0</span></td><td><div class="work-lines"><span>🔧 機器施工 <b id="condition-custom-install-total">¥289,596</b></span><span>🪵 床工事 <b id="condition-custom-floor">¥0</b></span></div></td><td>上の編集内容・入力金額に連動</td></tr>
+            <tr><td><span class="tag">詳細見積</span><br><span class="scenario">C｜クックホーム住宅改修一式</span></td><td>🏠 洋室＋🛁 浴室＋🪞 脱衣室＋🍳 キッチン</td><td class="money">¥4,398,152<br><span class="delta">Aより ¥351,848低い</span></td><td>🍳 クリナップ ラクエラ<span class="cell-price">機器 ¥504,350</span><span class="cell-detail">🔧 撤去・配管・電気・取付等 ¥497,200</span></td><td>🛁 クリナップ ラクヴィア<span class="cell-price">機器 ¥711,150</span><span class="cell-detail">🔧 解体・廃棄・土間・補壁・取付・配管 ¥531,124</span></td><td>🪞 洗面化粧台<span class="cell-price">機器 ¥100,683</span><span class="cell-detail">🔧 脱衣室改修等 ¥550,363</span></td><td><div class="work-lines"><span>🛋️ 洋室改修 <b>¥1,305,282</b></span><span>🛁 浴室一式 <b>¥1,242,274</b></span><span>🪞 脱衣室 <b>¥651,046</b></span><span>🍳 キッチン <b>¥1,001,550</b></span><span>📋 諸経費 <b>¥198,000</b></span></div></td><td>機器は未確定。浴室の窓解体は別途、着工後に追加の可能性</td></tr>
+            <tr><td><span class="tag warn">設備2点</span><br><span class="scenario">D｜クックホーム設備見積</span></td><td>🍳 キッチン＋🛁 浴室の商品・取付</td><td class="money">¥1,463,326</td><td>🍳 LIXIL シエラ<span class="cell-price">機器 ¥530,388</span><span class="cell-detail">🔧 取付 ¥186,548</span></td><td>🛁 LIXIL リデア<span class="cell-price">機器 ¥643,342</span><span class="cell-detail">🔧 取付 ¥103,048</span></td><td>🪞 なし<span class="cell-price">¥0</span></td><td><div class="work-lines"><span>🔨 解体・下地・配管準備 <b>含まない</b></span><span>🪵 床・内装等 <b>含まない</b></span></div></td><td>設備2点の別見積。詳細見積とは機器・工事範囲が異なる</td></tr>
+            <tr class="dynamic-row"><td><span class="tag warn">自動反映</span><br><span class="scenario">E｜クックホーム カスタム</span></td><td id="condition-custom-config">🍳 キッチン＋🛁 浴室＋🪞 洗面・脱衣室＋その他工事</td><td class="money best" id="condition-custom-total">¥4,398,152</td><td>🍳 <span id="condition-custom-kitchen-name">クックホーム詳細｜クリナップ ラクエラ</span><span class="cell-price" id="condition-custom-kitchen-price">機器 ¥504,350</span><span class="cell-detail" id="condition-custom-kitchen-install">🔧 施工 ¥497,200</span></td><td>🛁 <span id="condition-custom-bath-name">クックホーム詳細｜クリナップ ラクヴィア</span><span class="cell-price" id="condition-custom-bath-price">機器 ¥711,150</span><span class="cell-detail" id="condition-custom-bath-install">🔧 施工 ¥531,124</span></td><td>🪞 <span id="condition-custom-vanity-name">クックホーム詳細｜洗面化粧台＋脱衣室改修</span><span class="cell-price" id="condition-custom-vanity-price">機器 ¥100,683</span><span class="cell-detail" id="condition-custom-vanity-install">🔧 施工 ¥550,363</span></td><td><div class="work-lines"><span>🔧 機器・各室施工 <b id="condition-custom-install-total">¥1,578,687</b></span><span>🏠 その他工事 <b id="condition-custom-floor">¥1,503,282</b></span></div></td><td>上の編集内容・入力金額に連動</td></tr>
           </tbody>
         </table>
       </div>
@@ -132,9 +136,9 @@
           <ul class="checks"><li>税込 ¥1,792,593は施工・改装のみ</li><li>住宅設備欄 ¥115,000（税別）はキッチン施工 ¥90,000＋洗面施工 ¥25,000</li><li>キッチン・浴室・洗面台本体は「施主支給」</li><li>沖縄協同ガス ¥1,065,130を別途加算すると合計 ¥2,857,723</li></ul>
         </article>
         <article class="card">
-          <h3>クックホーム</h3><div class="small">キッチン＋システムバス</div><div class="price">¥1,463,326</div>
-          <div class="rows"><div class="row"><span>🍳 システムキッチン</span><span>LIXIL シエラ</span></div><div class="row"><span>💴 キッチン</span><span>¥678,537</span></div><div class="row"><span>🛁 システムバス</span><span>LIXIL リデア</span></div><div class="row"><span>💴 バス</span><span>¥651,760</span></div></div>
-          <ul class="checks"><li>税抜 ¥1,330,297／消費税 ¥133,029</li><li class="no">洗面化粧台の記載なし</li><li class="no">外部からの目視見積もり。着工後に追加の可能性</li></ul>
+          <h3>株式会社ケアモデル（クックホーム）</h3><div class="small">住宅改修詳細見積／2026年5月3日／機器は未確定</div><div class="price">¥4,398,152</div>
+          <div class="rows"><div class="row"><span>🛋️ 洋室改修工事（税別）</span><span>¥1,186,620</span></div><div class="row"><span>🛁 ユニットバス工事（税別）</span><span>¥1,129,340</span></div><div class="row"><span>🪞 脱衣室改修工事（税別）</span><span>¥591,860</span></div><div class="row"><span>🍳 キッチン取替工事（税別）</span><span>¥910,500</span></div><div class="row"><span>📋 諸経費（税別）</span><span>¥180,000</span></div><div class="row"><span>消費税</span><span>¥399,832</span></div></div>
+          <ul class="checks"><li>税抜 ¥3,998,320／税込 ¥4,398,152</li><li>浴室は解体・廃棄・土間・補壁・取付・配管まで計上</li><li>キッチンは撤去・処分・配管・電気・補修・取付まで計上</li><li class="no">浴室窓の解体は別途</li><li class="no">外部からの目視見積もり。着工後に追加の可能性</li><li class="no">設備2点のみの別見積 ¥1,463,326とは機器・範囲が異なる</li></ul>
         </article>
         <article class="card">
           <h3>沖縄協同ガス（住宅設備機器）</h3><div class="small">機器見積もり／見積 No. 1429-20260624／2026年6月24日</div><div class="price">¥1,065,130</div>
@@ -150,22 +154,22 @@
         <table class="scope-table">
           <thead><tr><th>工事・設備</th><th>きくはら工務店</th><th>リフォーム図書館</th><th>クックホーム</th><th>沖縄協同ガス<br>機器見積もり</th></tr></thead>
           <tbody>
-            <tr><td>仮設・養生</td><td class="scope part">△ 一部</td><td class="scope yes">● 含む</td><td class="scope unknown">— 記載なし</td><td class="scope no">× 別途</td></tr>
-            <tr><td>既存設備・内装の解体</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope unknown">— 記載なし</td><td class="scope no">× 別途</td></tr>
-            <tr><td>廃材の搬出・処分</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope unknown">— 記載なし</td><td class="scope no">× 別途</td></tr>
-            <tr><td>🪵 木工・下地・床</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope unknown">— 記載なし</td><td class="scope no">× 別途</td></tr>
-            <tr><td>壁・天井・クロス等の内装</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope unknown">— 記載なし</td><td class="scope no">× 別途</td></tr>
-            <tr><td>🚰 給排水・給湯配管工事</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope unknown">— 要確認</td><td class="scope no">× 別途</td></tr>
-            <tr><td>💡 電気・換気工事</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope unknown">— 要確認</td><td class="scope no">× 別途</td></tr>
-            <tr><td>🍳 システムキッチン本体</td><td class="scope yes">● ¥648,819</td><td class="scope no">× 施主支給</td><td class="scope yes">● ¥643,342</td><td class="scope yes">● ¥423,060</td></tr>
-            <tr><td>🔧 キッチン取付・接続</td><td class="scope yes">● ¥213,730</td><td class="scope yes">● ¥99,000</td><td class="scope part">△ ¥103,048</td><td class="scope no">× 機器のみ</td></tr>
-            <tr><td>🛁 ユニットバス本体</td><td class="scope yes">● ¥900,517</td><td class="scope no">× 施主支給</td><td class="scope yes">● ¥530,388</td><td class="scope yes">● ¥471,570</td></tr>
-            <tr><td>🔧 ユニットバス組付・接続</td><td class="scope yes">● ¥93,500</td><td class="scope no">× メーカー施工</td><td class="scope part">△ ¥186,548</td><td class="scope yes">● ¥98,340</td></tr>
-            <tr><td>🪞 洗面化粧台本体</td><td class="scope yes">● ¥101,640</td><td class="scope no">× 施主支給</td><td class="scope unknown">— ¥0</td><td class="scope yes">● ¥72,160</td></tr>
-            <tr><td>🔧 洗面化粧台取付・接続</td><td class="scope yes">● ¥16,500</td><td class="scope yes">● ¥27,500</td><td class="scope unknown">— ¥0</td><td class="scope no">× 機器のみ</td></tr>
-            <tr><td>塗装</td><td class="scope yes">● 含む</td><td class="scope part">△ 一部</td><td class="scope unknown">— 記載なし</td><td class="scope no">× 別途</td></tr>
-            <tr><td>完成後の清掃・美装</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope unknown">— 記載なし</td><td class="scope unknown">— 記載なし</td></tr>
-            <tr><td>現場管理・諸経費</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope unknown">— 記載なし</td><td class="scope unknown">— 記載なし</td></tr>
+            <tr><td>仮設・養生</td><td class="scope part">△ 一部</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope no">× 別途</td></tr>
+            <tr><td>既存設備・内装の解体</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope no">× 別途</td></tr>
+            <tr><td>廃材の搬出・処分</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope no">× 別途</td></tr>
+            <tr><td>🪵 木工・下地・床</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope no">× 別途</td></tr>
+            <tr><td>壁・天井・クロス等の内装</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope no">× 別途</td></tr>
+            <tr><td>🚰 給排水・給湯配管工事</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope no">× 別途</td></tr>
+            <tr><td>💡 電気・換気工事</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope part">△ キッチン電気のみ明記</td><td class="scope no">× 別途</td></tr>
+            <tr><td>🍳 システムキッチン本体</td><td class="scope yes">● ¥648,819</td><td class="scope no">× 施主支給</td><td class="scope yes">● ¥504,350</td><td class="scope yes">● ¥423,060</td></tr>
+            <tr><td>🔧 キッチン取替関連</td><td class="scope yes">● ¥213,730</td><td class="scope yes">● ¥99,000</td><td class="scope yes">● ¥497,200</td><td class="scope no">× 機器のみ</td></tr>
+            <tr><td>🛁 ユニットバス本体</td><td class="scope yes">● ¥900,517</td><td class="scope no">× 施主支給</td><td class="scope yes">● ¥711,150</td><td class="scope yes">● ¥471,570</td></tr>
+            <tr><td>🔧 浴室解体・補修・組付・接続</td><td class="scope yes">● 一式内</td><td class="scope no">× メーカー施工</td><td class="scope yes">● ¥531,124</td><td class="scope yes">● ¥98,340</td></tr>
+            <tr><td>🪞 洗面化粧台本体</td><td class="scope yes">● ¥101,640</td><td class="scope no">× 施主支給</td><td class="scope yes">● ¥100,683</td><td class="scope yes">● ¥72,160</td></tr>
+            <tr><td>🔧 洗面化粧台取付・接続</td><td class="scope yes">● ¥16,500</td><td class="scope yes">● ¥27,500</td><td class="scope yes">● ¥104,500</td><td class="scope no">× 機器のみ</td></tr>
+            <tr><td>塗装</td><td class="scope yes">● 含む</td><td class="scope part">△ 一部</td><td class="scope yes">● 含む</td><td class="scope no">× 別途</td></tr>
+            <tr><td>完成後の清掃・美装</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope unknown">— 要確認</td><td class="scope unknown">— 記載なし</td></tr>
+            <tr><td>現場管理・諸経費</td><td class="scope yes">● 含む</td><td class="scope yes">● 含む</td><td class="scope yes">● ¥198,000</td><td class="scope unknown">— 記載なし</td></tr>
           </tbody>
         </table>
       </div>
@@ -248,8 +252,8 @@
           document.getElementById(`${select.id.replace('-select','')}-row-summary`).textContent = `${select.dataset.equipment}｜選択中：機器 ${yen(machine)} ＋ 🔧 施工 ${yen(install)} ＝ 小計 ${yen(machine + install)}`;
           if (option.dataset.label !== 'なし') descriptions.push(select.dataset.equipment);
         });
-        if (floorTotal) descriptions.push('床工事');
-        document.getElementById('floor-row-summary').textContent = `🪵 選択中：床工事 ${yen(floorTotal)}`;
+        if (floorTotal) descriptions.push('その他工事');
+        document.getElementById('floor-row-summary').textContent = `🏠 選択中：その他工事 ${yen(floorTotal)}`;
         const description = descriptions.join('＋') || '機器・工事なし';
         document.getElementById('condition-custom-config').textContent = description;
         document.getElementById('condition-custom-total').textContent = yen(grand);
@@ -267,10 +271,9 @@
       }
 
       const presets = {
-        cook: {indexes:[0, 0, 0], floor:0},
-        cook_wash: {indexes:[0, 0, 2], floor:0},
-        cook_floor: {indexes:[0, 0, 2], floor:1},
-        okinawa: {indexes:[2, 2, 3], floor:0}
+        cook_detail: {indexes:[0, 0, 0], floor:0},
+        cook_equipment: {indexes:[1, 1, 1], floor:1},
+        okinawa: {indexes:[3, 3, 4], floor:1}
       };
       document.querySelectorAll('[data-preset]').forEach(button => {
         button.addEventListener('click', () => {
